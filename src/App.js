@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.style.scss'; 
+//import ListProduct from './component/ListProduct';
+import Addition from './component/Addition';
+// import Navbar from './component/Navbar';
+// import Content from './component/Content';
+// import Footer from './component/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+  class App extends Component {
+    render(){
+      return(
+        <div className="App">
+          {/* <Navbar />
+          <Content />
+          <Footer /> */}
+          {/* <ListProduct nom="tsiky nacks au boeuf" description="croquette de pomme de terre à la saveur de boeuf" prix="200Ar" categorie="snack"/> */}
+          <Addition/>
+        </div>
+      )
+    }
+  }
 export default App;
