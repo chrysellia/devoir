@@ -2,24 +2,32 @@ import React, { Component } from 'react';
 import './App.style.scss'; 
 //import ListProduct from './component/ListProduct';
 // import Addition from './component/Addition';
-import Navbar from './component/Navbar/Navbar';
-import Content from './component/Content/Content';
-import Footer from './component/Footer/Footer';
-import Contact from './component/Contact/Contact';
+import Gallery from './component/Gallery/Gallery';
+import ProductList from './component/Product/ProductList';
 // import DetailProduct from './component/DetailProduct';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+}
+from "react-router-dom";
+import Home from './HomePage/HomePage';
 
   class App extends Component {
     render(){
       return(
-        <div className="App">
-          <Navbar />
-          <Content />
-          <Contact />
-          <Footer />
-          {/* <DetailProduct /> */}
-          {/* <ListProduct nom="tsiky nacks au boeuf" description="croquette de pomme de terre à la saveur de boeuf" prix="200Ar" categorie="snack"/> */}
-          {/* <Addition/> */}
-        </div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/gallerie">
+              <Gallery/>
+            </Route>
+            <Route path="/product">
+              <ProductList/>
+            </Route>
+          </Switch>
+        </Router>
+        //   {/* <ListProduct nom="tsiky nacks au boeuf" description="croquette de pomme de terre à la saveur de boeuf" prix="200Ar" categorie="snack"/> */}
       )
     }
   }

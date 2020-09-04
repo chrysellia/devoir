@@ -9,7 +9,7 @@ class Contact extends Component {
                 <section class="text-gray-700 body-font relative">
                     <div class="container px-5 py-24 mx-auto">
                         <div class="flex flex-col text-center w-full mb-12">
-                            <h1 class="titre sm:text-3xl text-2xl font-medium title-font mb-4 text-pink-800">Contact us</h1>
+                            <h1 class="titre sm:text-3xl text-2xl font-medium title-font mb-4 text-pink-800">Contactez-nous</h1>
                             <p class="content lg:w-2/3 mx-auto leading-relaxed text-base">Vous avez des questions? Envoyez-nous les en complétant les information suivantes</p>
                         </div>
                         <div class="lg:w-1/2 md:w-2/3 mx-auto">
