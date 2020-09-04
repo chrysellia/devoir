@@ -1,0 +1,33 @@
+.titre {
+    font-size: 40px;
+    font-family: 'Berkshire_Swash';
+}
+
+.content {
+    font-size: 25px;
+    font-family: 'Lobster';
+}
+
+.cover_title {
+    position: absolute;  
+    left: 50%;                 
+    top: 50%;              
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    border: 14px solid white;
+    padding: 20px;
+}
+
+.product_image:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+    transition: all ease-in 400ms;
+    cursor:pointer;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}

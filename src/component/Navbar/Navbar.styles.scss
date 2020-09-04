@@ -1,0 +1,18 @@
+.navbar {
+    font-size: 20px;
+    font-family: 'Playball';
+}
+
+.logo {
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: pink;
+}
+
+.menu {
+    &:hover {
+        border-bottom: 2px solid;
+        padding: 6px 0; 
+        transition: 0.6s;
+    }
+}
