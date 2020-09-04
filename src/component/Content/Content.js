@@ -6,10 +6,22 @@ import Slide from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
 class Content extends Component {
+  // state = {
+  //   selectedProduct: {},
+  // }
+
+  // showProduct = () => {
+  //   this.setState({
+  //     selectedProduct: product
+  //   });
+  // }
+
     render() {
+      // const {selectedProduct} = this.state;
+      // const { produits } =this.props;
         return(
           <>
-            <section class="text-gray-700 body-font">
+            <section>
                 <div className="flex flex-no-wrap overflow-hidden items-center relative" style={{height: '670px'}}>
                   <Fade  left>
                     <img className="w-1/3 flex-none p-2 h-1/2" src="image/photo6.jpg"/>
@@ -30,7 +42,7 @@ class Content extends Component {
               <Slide left>
                 <MiddleBody />
               </Slide>
-              <h1 className="text-center titre tex-pink-800">NOS PRODUITS</h1>
+              <h1 className="titre sm:text-3xl text-2xl text-center font-medium mb-4 text-center text-pink-800">NOS PRODUITS</h1>
               <div class="container px-5 py-24 mx-auto flex flex-wrap">
                 <div class="flex flex-wrap md:-m-2 -m-1">
                   <div class="flex flex-wrap w-1/2">
@@ -42,7 +54,7 @@ class Content extends Component {
                       <img alt="gallery" class="product_image w-full object-cover h-full object-center block" src="image/short-female.jpg"/>
                       <h1 className="category_product text-center">SHORT</h1>
                     </div>
-                    <div class="md:p-2 p-1 w-full relative">
+                    <div class="md:p-2 p-1 w-full relative"onClick={this.showProduct}>
                       <img alt="gallery" class="product_image w-full h-full object-cover object-center block" src="image/shirt-female.jpg"/>
                       <h1 className="category_product text-center">CHEMISE</h1>
                     </div>
