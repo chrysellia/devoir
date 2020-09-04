@@ -25,6 +25,19 @@
     transform: scale(1.5); 
     transition: all ease-in 400ms;
     cursor:pointer;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.category_product {
+    position: absolute;  
+    left: 50%;                 
+    top: 50%;              
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    border: 10px solid white;
+    padding: 20px;
 }
 
 .price {

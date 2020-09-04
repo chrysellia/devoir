@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 import Navbar from '../component/Navbar/Navbar';
 import Content from '../component/Content/Content';
-import MiddleBody from '../component/MiddleBody/MiddleBody';
 import Footer from '../component/Footer/Footer';
 import Contact from '../component/Contact/Contact';
 
@@ -18,7 +17,6 @@ class HomePage extends Component {
 
                 <Navbar />
                 <Content />
-                <MiddleBody />
                 <Contact />
                 <Footer />
             </>
