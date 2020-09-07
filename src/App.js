@@ -22,7 +22,7 @@ import Home from './HomePage/HomePage';
             <Route path="/gallerie">
               <Gallery/>
             </Route>
-            <Route path="/product">
+            <Route exact path="/product-list/:productId" component={ProductList}>
               <ProductList/>
             </Route>
           </Switch>
