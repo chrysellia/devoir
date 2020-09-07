@@ -4,7 +4,7 @@ import IntroSection from './IntroSection';
 import FavoriteSection from './FavoriteSection';
 import ProductSection from './ProductSection';
 import ContactSection from './ContactSection';
-import MiddleBody from '../MiddleBody/MiddleBody';
+import MiddleBody from './MiddleBody';
 import './Content.styles.scss';
 import ProductList from '../Product/ProductList';
 import { Link } from 'react-router-dom';
