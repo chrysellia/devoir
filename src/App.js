@@ -29,8 +29,6 @@ import Home from './HomePage/HomePage';
           </ul>
   
           <hr />
-  
-        
           <Switch>
             <Route exact path="/">
               <Maison />
