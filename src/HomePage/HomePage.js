@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import Navbar from '../component/Navbar/Navbar';
 import Content from '../component/Content/Content';
 import Footer from '../component/Footer/Footer';
-import Contact from '../component/Contact/Contact';
 
 class HomePage extends Component {
     render() {
@@ -17,7 +16,6 @@ class HomePage extends Component {
 
                 <Navbar />
                 <Content />
-                <Contact />
                 <Footer />
             </>
         )

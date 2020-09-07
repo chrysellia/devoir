@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import './Contact.styles.scss';
+import './ContactSection.styles.scss';
 
-class Contact extends Component {
+class ContactSection extends Component {
     render() {
         return(
             <Fade right>
@@ -35,4 +35,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default ContactSection;
