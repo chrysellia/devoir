@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link
 }
 from "react-router-dom";
 import Home from './HomePage/HomePage';
@@ -17,18 +18,47 @@ import Home from './HomePage/HomePage';
     render(){
       return(
         <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+  
+          <hr />
+  
+        
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/gallerie">
-              <Gallery/>
+            <Route exact path="/">
+              <Maison />
             </Route>
-            <Route exact path="/product-list/:productId" component={ProductList}>
-              <ProductList/>
+            <Route path="/about">
+              <About />
             </Route>
           </Switch>
-        </Router>
+        </div>
+      </Router>
         //   {/* <ListProduct nom="tsiky nacks au boeuf" description="croquette de pomme de terre à la saveur de boeuf" prix="200Ar" categorie="snack"/> */}
       )
     }
   }
 export default App;
+
+class Maison extends Component {
+  render(){
+    return(
+      <div>Maison</div>
+    );
+  }
+}
+
+class About extends Component {
+  render(){
+    return(
+      <div>About</div>
+    );
+  }
+}
