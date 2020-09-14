@@ -15,6 +15,15 @@ import Home from './HomePage/HomePage';
 
   class App extends Component {
     render(){
+      const produits = [
+        {
+          'id': '1',
+          'image':'image',
+          'category':'my category',
+          'nom': 'cryselian',
+          'prix':'200'
+        }
+      ]
       return(
         <Router>
           <Switch>
@@ -22,8 +31,8 @@ import Home from './HomePage/HomePage';
             <Route path="/gallerie">
               <Gallery/>
             </Route>
-            <Route exact path="/product-list/:productId" component={ProductList}>
-              <ProductList/>
+            <Route exact path="/product" component={ProductList}>
+              <ProductList produits={produits}/>
             </Route>
           </Switch>
         </Router>

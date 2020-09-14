@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 
 
 class ProductList extends Component {
+    constructor(props) {
+        super(props);
+        console.log("debuger props produits ", this.props.produits)
+    }
     render() {
-        const { selectedProduct } = this.props;
-        const { products } = selectedProduct;
         return(
             <>
             <div>
+                hello produit
                 <h1 className="text-center titre pt-20 pb-0">Liste des produits</h1>
                 <section>
-                    { products.map( product => {
+                    { this.props.produits.map( product => {
                         return(
-                            <div class="container px-5 py-24 mx-auto">
+                            <div class="container px-5 py-24 mx-auto" key={product.id}>
                                 <div class="flex flex-wrap -m-4">
                                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                                         <a class="block relative h-48 rounded overflow-hidden">
